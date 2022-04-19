@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$background: #3775d3;
+$white: #fff;
+$text-color: #707070;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  background-color: $background;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    height: auto;
+    width: 60%;
+    margin: 3rem 0;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 10px;
+    }
+
+    & h1 {
+      text-align: center;
+    }
+
+    &--content {
+      &-actions {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .userlist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        &__item {
+          background: $white;
+          color: $text-color;
+          padding: 1rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 0.5rem;
+          min-height: 10vh;
+          width: 100%;
+
+          &--statusicon {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & div {
+              height: 40%;
+              width: 40%;
+              border-radius: 50%;
+
+              @media screen and (max-width: 768px) {
+                height: 20%;
+                width: 50%;
+              }
+              @media screen and (max-width: 916px) {
+                height: 30%;
+                width: 50%;
+              }
+            }
+          }
+
+          &--details {
+            &-status {
+              font-style: italic !important;
+              font-weight: 300;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  width: auto;
+  min-width: 20%;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  & label {
+    font-size: medium;
+  }
+
+  &--input {
+    height: 1.5rem;
+    margin: 0.5rem 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
