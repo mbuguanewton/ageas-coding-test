@@ -21,8 +21,6 @@ User data - userlist.txt (file included)
 
 # Flow of activities
 
----
-
 I used Reactjs and SCSS to complete the task and below is the folder structure.
 
 ```bash
