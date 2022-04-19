@@ -88,6 +88,8 @@ For ordering the list I have a function that orders based on the order passed so
 
 Open the project folder through the terminal on linux/mac or cmd/powershell on windows and clone the project from github
 
+[git clone https://github.com/mbuguanewton/ageas-code-test](https://github.com/mbuguanewton/ageas-coding-test.git)
+
 ```bash
 git clone https://github.com/mbuguanewton/ageas-code-test
 ```
@@ -127,6 +129,7 @@ The only dependacies need for the project to run are;
 - sass - to load our .scss files
 
 ### Scripts folder
+
 This folder contains a git scripts that enables me to run some commands on the terminal to push code to github.
 
 ```bash
@@ -135,7 +138,7 @@ This folder contains a git scripts that enables me to run some commands on the t
 ```
 
 ```bash
-# for any other push 
+# for any other push
 ./scripts/git.sh push
 ```
 
